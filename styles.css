@@ -1,0 +1,98 @@
+/* General */
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  min-width: 360px;
+}
+/* end general */
+
+/* Custom CSS */
+.navbar-brand img {
+  height: 60px;
+  width: 60px;
+}
+.brand img {
+  height: 60px;
+  width: 60px;
+}
+.brand img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease all;
+}
+/* End Custom CSS */
+
+/* Custom Hover States */
+#project-card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease all;
+}
+
+#social-links i:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease all;
+  color: #33b5e5 !important;
+}
+
+#btn:hover {
+  color: white !important;
+  background-color: #33b5e5 !important;
+  transition: 0.5s ease all !important;
+}
+
+strong:hover {
+  color: #33b5e5 !important;
+  transition: 0.3s ease all !important;
+}
+
+/* End Custom Hover States */
+
+/* JS fade in on scroll */
+.fadeOut {
+  transition: all 0.6s ease-in !important;
+  /* transform: translateY(60px) !important; */
+  opacity: 0 !important;
+}
+
+.fadeIn {
+  transform: translateY(-60px) !important;
+  opacity: 1 !important;
+}
+
+/* Smart scroll css */
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down {
+  transform: translateY(-100%) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.scrolled-up {
+  transform: translateY(0) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+/* end Smart scroll css */
+
+/* sidebar */
+#sidebar {
+  top: 50%;
+  right: 0;
+}
+@media screen and (max-width: 800px) {
+  #sidebar {
+    display: none;
+  }
+}
+/* end sidebar */
+
+/* hero section margin */
+@media screen and (max-width: 500px) {
+  #hero {
+    margin-top: 200px;
+  }
+}
+/* end hero section margin */
