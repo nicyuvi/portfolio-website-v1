@@ -122,10 +122,16 @@ strong:hover {
 }
 /* end sidebar */
 
-/* hero section margin */
+/* hero section  */
 @media screen and (max-width: 500px) {
   #hero {
     margin-top: 200px;
   }
 }
-/* end hero section margin */
+
+@media screen and (max-width: 320px) {
+  #hero h1 {
+    font-size: 3.5rem !important;
+  }
+}
+/* end hero section  */
