@@ -3,11 +3,14 @@ html {
   scroll-behavior: smooth !important;
 }
 body {
-  min-width: 360px;
+  /* min-width: 360px; */
 }
 /* end general */
 
-/* Custom CSS */
+/*==========
+  Custom CSS 
+=============*/
+/* nav bar */
 .navbar-brand img {
   height: 60px;
   width: 60px;
@@ -20,7 +23,37 @@ body {
   transform: translateY(-5px);
   transition: 0.5s ease all;
 }
-/* End Custom CSS */
+
+/* skills section */
+.skills-cards {
+  margin: auto;
+  max-width: 690px;
+}
+.block {
+  text-align: center;
+  vertical-align: middle;
+}
+.circle {
+  border: 3px solid #33b5e5;
+  border-radius: 50%;
+  color: white;
+  height: 110px;
+  width: 110px;
+  font-weight: bold;
+  display: table;
+  margin: 20px auto;
+  transition: 0.5s ease all;
+}
+.circle p {
+  vertical-align: middle;
+  display: table-cell;
+}
+.circle:hover {
+  transform: translateY(-7px);
+}
+/*==========
+  End Custom CSS 
+=============*/
 
 /* Custom Hover States */
 #project-card:hover {
