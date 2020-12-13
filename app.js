@@ -20,9 +20,7 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 fadeElms.forEach((el) => observer.observe(el));
 //end fade in on scroll
 
-//get scroll position
 //Smart scroll nav bar
-// detect scroll top or down
 if ($('.smart-scroll').length > 0) {
   // check if element exists
   var last_scroll_top = 0;
@@ -39,3 +37,9 @@ if ($('.smart-scroll').length > 0) {
   });
 }
 // end Smart scroll nav bar
+
+// close nav bar on link click
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide');
+});
+// close nav bar on link click
