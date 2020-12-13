@@ -21,9 +21,6 @@ fadeElms.forEach((el) => observer.observe(el));
 //end fade in on scroll
 
 //Smart scroll nav bar
-// add padding top to show content behind navbar
-$('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-
 // detect scroll top or down
 if ($('.smart-scroll').length > 0) {
   // check if element exists

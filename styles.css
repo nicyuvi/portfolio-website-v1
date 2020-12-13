@@ -2,10 +2,6 @@
 html {
   scroll-behavior: smooth !important;
 }
-body {
-  padding-top: 0 !important;
-}
-
 /* section spacing utils */
 .section-spacing {
   margin-bottom: 100px;
@@ -155,6 +151,9 @@ strong:hover {
 /* end sidebar */
 
 /* hero section  */
+#hero {
+  margin-top: 20px;
+}
 @media screen and (max-width: 640px) {
   #hero h1 {
     font-size: 1.5rem !important;
