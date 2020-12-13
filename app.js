@@ -20,6 +20,7 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 fadeElms.forEach((el) => observer.observe(el));
 //end fade in on scroll
 
+//get scroll position
 //Smart scroll nav bar
 // detect scroll top or down
 if ($('.smart-scroll').length > 0) {
@@ -27,12 +28,14 @@ if ($('.smart-scroll').length > 0) {
   var last_scroll_top = 0;
   $(window).on('scroll', function () {
     scroll_top = $(this).scrollTop();
-    if (scroll_top < last_scroll_top) {
-      $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-    } else {
-      $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+    if (scroll_top > 200) {
+      if (scroll_top < last_scroll_top) {
+        $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+      } else {
+        $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+      }
+      last_scroll_top = scroll_top;
     }
-    last_scroll_top = scroll_top;
   });
 }
 // end Smart scroll nav bar
