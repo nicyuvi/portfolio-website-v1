@@ -155,10 +155,10 @@ strong:hover {
   margin-top: 20px;
 }
 @media screen and (max-width: 640px) {
-  #hero h1 {
+  #hero #hero-title {
     font-size: 1.5rem !important;
   }
-  #hero p {
+  #hero #hero-subtitle {
     font-size: 1rem !important;
   }
 }
