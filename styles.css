@@ -105,6 +105,10 @@ strong:hover {
   color: #33b5e5 !important;
   transition: 0.3s ease all !important;
 }
+strong a:hover {
+  color: #33b5e5 !important;
+  transition: 0.3s ease all !important;
+}
 
 /* End Custom Hover States */
 
