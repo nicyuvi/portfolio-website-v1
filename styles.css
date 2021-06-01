@@ -95,7 +95,7 @@ textarea:focus {
   color: #33b5e5 !important;
 }
 
-#btn:hover {
+.btn-custom:hover {
   color: white !important;
   background-color: #33b5e5 !important;
   transition: 0.5s ease all !important;
@@ -176,7 +176,7 @@ strong a:hover {
   outline: 1px solid white;
 }
 
-#btn:focus {
+.btn-custom:focus {
   outline: 1px solid white;
   background-color: #33b5e5 !important;
   color: white !important;
