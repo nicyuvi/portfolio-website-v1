@@ -185,6 +185,18 @@ strong a:hover {
 #recent-project-link:focus {
   outline-offset: 15px;
 }
+
+#skip-nav-link a {
+  z-index: 2000;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  overflow: hidden;
+}
+
+#skip-nav-link a:focus {
+  left: auto;
+}
 /* end keyboard navigation */
 /*==============
   End Accessibility 
