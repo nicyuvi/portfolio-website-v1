@@ -175,6 +175,9 @@ strong a:hover {
 .navbar-toggler-icon:focus {
   outline: 1px solid white;
 }
+#btn:focus {
+  outline: 1px solid red;
+}
 /* end keyboard navigation */
 /*==============
   End Accessibility 
