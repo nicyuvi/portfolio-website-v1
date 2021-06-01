@@ -182,7 +182,7 @@ strong a:hover {
   color: white !important;
 }
 
-#recent-project-link:focus {
+.recent-project-link:focus {
   outline-offset: 15px;
 }
 
