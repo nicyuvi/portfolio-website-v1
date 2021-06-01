@@ -159,7 +159,7 @@ strong a:hover {
   margin-top: 20px;
 }
 @media screen and (max-width: 640px) {
-  #hero #hero-title {
+  #hero .hero-title {
     font-size: 1.5rem !important;
   }
   #hero #hero-subtitle {
