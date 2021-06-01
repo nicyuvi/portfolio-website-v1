@@ -176,7 +176,9 @@ strong a:hover {
   outline: 1px solid white;
 }
 #btn:focus {
-  outline: 1px solid red;
+  outline: 1px solid white;
+  background-color: #33b5e5 !important;
+  color: white !important;
 }
 /* end keyboard navigation */
 /*==============
