@@ -167,3 +167,15 @@ strong a:hover {
   }
 }
 /* end hero section  */
+
+/*==============
+  Accessibility 
+================*/
+/* keyboard navigation */
+.navbar-toggler-icon:focus {
+  outline: 1px solid white;
+}
+/* end keyboard navigation */
+/*==============
+  End Accessibility 
+================*/
