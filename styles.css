@@ -172,7 +172,7 @@ strong a:hover {
   Accessibility 
 ================*/
 /* keyboard navigation */
-.navbar-toggler-icon:focus {
+.navbar-toggler:focus {
   outline: 1px solid white;
 }
 
