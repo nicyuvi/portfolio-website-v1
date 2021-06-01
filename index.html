@@ -59,17 +59,20 @@
   </head>
 
   <body class="bg-dark position-relative m-auto">
+    <div id="skip-nav-link">
+      <a href="#main">Skip to main content</a>
+    </div>
     <div id="sidebar" class="mr-3 list-group position-fixed text-default animated fadeInRight">
-      <a id="social-links" href="https://github.com/nicyuvi" target="_blank" title="github">
+      <a class="social-links" href="https://github.com/nicyuvi" target="_blank" title="github">
         <i class="text-white h3 fab fa-github"></i>
       </a>
-      <a id="social-links" href="https://www.linkedin.com/in/nicyuvi/" target="_blank" title="linkedin">
+      <a class="social-links" href="https://www.linkedin.com/in/nicyuvi/" target="_blank" title="linkedin">
         <i class="text-white h3 fab fa-linkedin-in"></i>
       </a>
-      <a id="social-links" href="https://codepen.io/nicyuvi/pens/" target="_blank" title="codepen">
+      <a class="social-links" href="https://codepen.io/nicyuvi/pens/" target="_blank" title="codepen">
         <i class="text-white h3 fab fa-codepen"></i>
       </a>
-      <a id="social-links" href="https://twitter.com/nicyuvi" target="_blank" title="twitter">
+      <a class="social-links" href="https://twitter.com/nicyuvi" target="_blank" title="twitter">
         <i class="text-white h3 fab fa-twitter"></i>
       </a>
       
@@ -87,9 +90,9 @@
         aria-controls="navbarSupportedContent-4"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        tabindex="-1"
+        tabindex="0"
       >
-        <span tabindex="0" class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
         <ul class="navbar-nav ml-auto align-items-center">
@@ -106,15 +109,8 @@
             <a class="nav-link" href="https://blog.nicolisyuvienco.com/" target="_blank"> Blog</a>
           </li>
           <li class="nav-item">
-            <a tabindex="-1" class="nav-link" href="./images/Yuvienco-Front-End-Software-Engineer.pdf" target="_blank" title="Nicolis Yuvienco Resume">
-              <button
-                tabindex="0"
-                id="btn"
-                class="btn btn-md btn-outline-info"
-                type="button"
-              >
+            <a class="btn-custom nav-link btn btn-md btn-outline-info" href="./images/Yuvienco-Front-End-Software-Engineer.pdf" target="_blank" title="Nicolis Yuvienco Resume">
                 Resume
-              </button>
             </a>
           </li>
         </ul>
@@ -122,25 +118,26 @@
     </nav>
     <!-- End Navbar -->
     <div class="container m-auto h-100 bg-dark">
+      <main id="main">
       <!-- Hero -->
       <section tabindex="0" id="hero" class="hero-spacing">
         <div class="text-left mb-5 d-flex flex-column vh-100 justify-content-center">
-          <p id="hero-subtitle" class="h5 text-info animated fadeIn delay-1s fast">Hi, my name is</p>
-          <p id="hero-title" class="display-3 text-white font-weight-bold animated fadeIn delay-2s fast">
+          <p class="hero-subtitle h5 text-info animated fadeIn delay-1s fast">Hi, my name is</p>
+          <p class="hero-title display-3 text-white font-weight-bold animated fadeIn delay-2s fast">
             Nicolis Yuvienco.
           </p>
-          <h1 id="hero-title" class="display-3 grey-text font-weight-bold animated fadeIn delay-3s fast">
+          <h1 class="hero-title display-3 grey-text font-weight-bold animated fadeIn delay-3s fast">
             I am a front-end software engineer
           </h1>
-          <p id="hero-subtitle" class="grey-text h5 w-75 mb-5 animated fadeIn delay-3s fast">
+          <p class="hero-subtitle grey-text h5 w-75 mb-5 animated fadeIn delay-3s fast">
             I'm a self taught Front-End Software Engineer based in Los Angeles, CA
             specializing in building exceptional websites and applications, using
             the latest technologies.
           </p>
-          <a href="#contact" id="btn" class="btn btn-lg btn-outline-info animated fadeIn delay-4s fast">
+          <a href="#contact" class="btn-custom btn btn-lg btn-outline-info animated fadeIn delay-4s fast">
             Get In Touch
           </a>
-          <a href="#work" id="btn" class="btn btn-lg btn-outline-info animated fadeIn delay-4s fast">
+          <a href="#work" class="btn-custom btn btn-lg btn-outline-info animated fadeIn delay-4s fast">
             View my Projects
           </a>
         </div>
@@ -258,7 +255,7 @@
         <div class="project-container">
           <div style="margin-bottom: 150px" class="row fade fadeOut">
             <div class="col-lg-6 mb-3">
-              <a id="recent-project-link" href="https://doer.netlify.app/" target="_blank" title="Doer productivity web app"
+              <a class="recent-project-link" href="https://doer.netlify.app/" target="_blank" title="Doer productivity web app"
                 >
                 <img style="object-fit: cover;" class="img-fluid rounded-lg w-100" src="./images/doer-img.PNG"
                 alt="doer productivity web app screenshot" />
@@ -297,7 +294,7 @@
           </div>
           <div style="margin-bottom: 150px" class="row fade fadeOut">
             <div class="col-lg-6 order-lg-2 mb-3">
-              <a id="recent-project-link" href="https://wheelslandingpage.netlify.app/" target="_blank" title="Wheels landing page">
+              <a class="recent-project-link" href="https://wheelslandingpage.netlify.app/" target="_blank" title="Wheels landing page">
                 <img style="object-fit: cover;" class="img-fluid rounded-lg w-100" src="./images/wheels-img.png"
                   alt="wheels landing page screenshot" />
               </a>
@@ -335,7 +332,7 @@
           </div>
           <div style="margin-bottom: 150px" class="row fade fadeOut">
             <div class="col-lg-6 mb-3">
-              <a id="recent-project-link" href="https://ecommerce-yuvi.netlify.app/" target="_blank" title="Felix's Footware">
+              <a class="recent-project-link" href="https://ecommerce-yuvi.netlify.app/" target="_blank" title="Felix's Footware">
                 <img style="object-fit: cover;" class="img-fluid rounded-lg w-100" src="./images/ecommerce-img.png" alt="Felix's Footware screenshot" />
               </a>
             </div>
@@ -385,8 +382,7 @@
         <div class="more-projects-container">
           <div class="row h-50 no-gutters mb-3 fade fadeOut">
             <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="https://github.com/nicyuvi/happy-pets-landing-page" target="_blank" title="Happy Pets landing page github">
@@ -415,8 +411,7 @@
               </div>
             </div>
             <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="https://github.com/nicyuvi/surfers-life-blog" target="_blank" title="Surfer's Life Blog github">
@@ -444,8 +439,7 @@
               </div>
             </div>
             <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="https://github.com/nicyuvi/my-JavaScript-30/tree/main/1-js-drumkit" target="_blank" title="JavaScript drumset github">
@@ -473,8 +467,7 @@
           </div>
           <div class="row h-50 no-gutters mb-3 fade fadeOut">
             <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="https://github.com/nicyuvi/cozy-cabin-landing-page" target="_blank" title="cozy cabin landing page">
@@ -501,8 +494,7 @@
               </div>
             </div>
             <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="https://github.com/nicyuvi/interactive-pricing-component-solution" target="_blank" title="interactive pricing component">
@@ -528,8 +520,7 @@
               </div>
             </div>
             <!-- <div
-              id="project-card"
-              class="col-lg bg-info rounded-lg p-3 mx-3 mb-3"
+              class="project-card col-lg bg-info rounded-lg p-3 mx-3 mb-3"
             >
               <div class="row justify-content-between no-gutters mb-3">
                 <a href="#">
@@ -606,7 +597,7 @@
           </div>
           <div class="col-md-6 text-center">
             <img tabindex="0" style="height: 450px; object-fit: cover; object-position: top; outline-offset: 10px;" class="img-fluid img-thumbnail w-100"
-              src="./images/profile-img.jpg" alt="Nicolis Yuvienco profile picture" title="Nicolis Yuvienco profile picture" />
+              src="./images/profile-img.jpg" alt="Nicolis Yuvienco profile picture" />
           </div>
         </div>
       </section>
@@ -637,8 +628,7 @@
                   <!--Grid column-->
                   <div class="col-lg-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
-                      <label for="name" class=""></label>
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" aria-label="Your Name">
                     </div>
                   </div>
                   <!--Grid column-->
@@ -646,8 +636,7 @@
                   <!--Grid column-->
                   <div class="col-lg-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="email" name="email" class="form-control" placeholder="Your Email">
-                      <label for="email" class=""></label>
+                      <input type="text" id="email" name="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
                     </div>
                   </div>
                   <!--Grid column-->
@@ -659,8 +648,7 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="md-form mb-0">
-                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
-                      <label for="subject" class=""></label>
+                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
                     </div>
                   </div>
                 </div>
@@ -673,15 +661,13 @@
                   <div class="col-lg-12">
         
                     <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message"></textarea>
-                      <label for="message"></label>
+                      <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message" aria-label="Your Message"></textarea>
                     </div>
-        
                   </div>
                 </div>
                 <!--Grid row-->
                 <div class="row justify-content-center">
-                  <button tabindex="0" type="submit" id="btn" class="btn btn-lg btn-outline-info fade fadeOut">
+                  <button tabindex="0" type="submit" class="btn-custom btn btn-lg btn-outline-info fade fadeOut">
                     Contact Me
                   </button>
                 </div>
@@ -713,9 +699,9 @@
         </div>
       </section>
       <!-- End Contact Me  -->
-
+      </main>
       <!-- Footer  -->
-      <section id="footer">
+      <footer id="footer">
         <div class="text-center">
           <a class="brand h2 fade fadeOut mb-5" href="#">
             <img src="./images/brand-logo.PNG" alt="Nicolis Yuvienco brand logo">
@@ -723,7 +709,7 @@
 
           <p class="text-muted h6">Nicolis Yuvienco 2021</p>
         </div>
-      </section>
+      </footer>
       <!-- End Footer  -->
     </div>
 

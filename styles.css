@@ -84,18 +84,18 @@ textarea:focus {
 =============*/
 
 /* Custom Hover States */
-#project-card:hover {
+.project-card:hover {
   transform: translateY(-5px);
   transition: 0.5s ease all;
 }
 
-#social-links i:hover {
+.social-links i:hover {
   transform: translateY(-5px);
   transition: 0.5s ease all;
   color: #33b5e5 !important;
 }
 
-#btn:hover {
+.btn-custom:hover {
   color: white !important;
   background-color: #33b5e5 !important;
   transition: 0.5s ease all !important;
@@ -159,10 +159,10 @@ strong a:hover {
   margin-top: 20px;
 }
 @media screen and (max-width: 640px) {
-  #hero #hero-title {
+  #hero .hero-title {
     font-size: 1.5rem !important;
   }
-  #hero #hero-subtitle {
+  #hero .hero-subtitle {
     font-size: 1rem !important;
   }
 }
@@ -172,18 +172,34 @@ strong a:hover {
   Accessibility 
 ================*/
 /* keyboard navigation */
-.navbar-toggler-icon:focus {
+.navbar-toggler:focus {
   outline: 1px solid white;
 }
 
-#btn:focus {
+.btn-custom:focus {
   outline: 1px solid white;
   background-color: #33b5e5 !important;
   color: white !important;
 }
 
-#recent-project-link:focus {
+.recent-project-link:focus {
   outline-offset: 15px;
+}
+
+#skip-nav-link a {
+  z-index: 2000;
+  position: absolute;
+  left: auto;
+  top: -100px;
+  overflow: hidden;
+  background-color: #bf1722;
+  color: white;
+  padding: 10px;
+  transition: top 1s ease-out;
+}
+
+#skip-nav-link a:focus {
+  top: 0;
 }
 /* end keyboard navigation */
 /*==============
