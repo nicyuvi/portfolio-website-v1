@@ -167,3 +167,25 @@ strong a:hover {
   }
 }
 /* end hero section  */
+
+/*==============
+  Accessibility 
+================*/
+/* keyboard navigation */
+.navbar-toggler-icon:focus {
+  outline: 1px solid white;
+}
+
+#btn:focus {
+  outline: 1px solid white;
+  background-color: #33b5e5 !important;
+  color: white !important;
+}
+
+#recent-project-link:focus {
+  outline-offset: 15px;
+}
+/* end keyboard navigation */
+/*==============
+  End Accessibility 
+================*/
