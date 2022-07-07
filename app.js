@@ -43,3 +43,6 @@ $('.navbar-nav>li>a').on('click', function () {
   $('.navbar-collapse').collapse('hide');
 });
 // close nav bar on link click
+
+// get current year
+document.getElementById("year").innerHTML = new Date().getFullYear();
